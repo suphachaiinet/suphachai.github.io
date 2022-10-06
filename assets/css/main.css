@@ -1831,25 +1831,30 @@ input, select, textarea {
 	input[type="button"],
 	button,
 	.button {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-ms-appearance: none;
-		appearance: none;
-		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		border-radius: 8px;
-		border: 0;
-		cursor: pointer;
-		display: inline-block;
-		font-weight: 300;
-		height: 2.75em;
-		line-height: 2.75em;
-		min-width: 9.25em;
-		padding: 0 1.5em;
-		text-align: center;
-		text-decoration: none;
+		-moz-box-shadow:inset -36px 0px 13px -15px #efdcfb;
+		-webkit-box-shadow:inset -36px 0px 13px -15px #efdcfb;
+		box-shadow:inset -36px 0px 13px -15px #efdcfb;
+		background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dfbdfa), color-stop(1, #bc80ea));
+		background:-moz-linear-gradient(top, #dfbdfa 5%, #bc80ea 100%);
+		background:-webkit-linear-gradient(top, #dfbdfa 5%, #bc80ea 100%);
+		background:-o-linear-gradient(top, #dfbdfa 5%, #bc80ea 100%);
+		background:-ms-linear-gradient(top, #dfbdfa 5%, #bc80ea 100%);
+		background:linear-gradient(to bottom, #dfbdfa 5%, #bc80ea 100%);
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfbdfa', endColorstr='#bc80ea',GradientType=0);
+		background-color:#dfbdfa;
+		-webkit-border-radius:42px;
+		-moz-border-radius:42px;
+		border-radius:42px;
+		border:2px solid #d0a3f0;
+		display:inline-block;
+		cursor:pointer;
+		color:#ffffff;
+		font-family:Arial;
+		font-size:14px;
+		font-weight:bold;
+		padding:14px 35px;
+		text-decoration:none;
+		text-shadow:-2px 3px 11px #a98cbe;
 		white-space: nowrap;
 	}
 
@@ -3783,3 +3788,4 @@ input, select, textarea {
 			}
 
 		}
+		
