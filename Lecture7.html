@@ -16,7 +16,7 @@
 
 		<!-- Wrapper -->
 			<div id="wrapper">
-
+				<font face = "Comic Sans MS" >
 				<!-- Header -->
 					<header id="header" class="alt">
 						<span class="logo"><img src="images/001.jpg" width="300" alt="" /></span>
@@ -45,12 +45,253 @@
 											<h2>Lecture7</h2>
 										</header>
 										<p>
-                                            เรื่อง....
+											<center><h2>LISTS</h2></center>
+											<center><img src="images/python.png" width="300"/></center>
+											<center><h3> Introduction </h3></center><hr>
+
+											<h2>LISTS</h2>
+											The fundamental sequence types: lists and tuples. Both lists
+											and tuples are sequences that can hold various types of
+											data. The difference between lists and tuples is simple:<br>
+											• List is mutable, which means that a program can
+											change its contents.<br>
+											• Tuple is immutable, which means that once it is created,
+											its contents cannot be changed.<br> 
+											A list is an object that contains multiple data items. Lists
+											are mutable, which means that their contents can be
+											changed during a program's execution. Lists are
+											dynamic data structures, meaning that items may be
+											added to them or removed from them. You can use
+											indexing, slicing, and various methods to work with lists in
+											a program. <br> 
+											• List: an object that contains multiple data items<br>
+											&emsp; ∘ Element: An item in a list<br>
+											&emsp; ∘ Format: list = [item1, item2, etc.]<br>
+											&emsp; ∘ Can hold items of different types<br>
+											• print function can be used to display an entire list<br>
+											• list() function can convert certain types of objects to lists<br><hr>
+
+											<h2>INTROLIST.PY</h2>
+											<center><img src="images/list.png" width="600"/></center><hr>
+
+											<center><h2>LISTS</h2></center>
+											<center><img src="images/python.png" width="300"/></center>
+											<center><h3>List Methods and Useful Built-in Functions</h3></center><hr>
+
+											<h2>LISTS OPERATOR</h2>
+											• Repetition operator: makes multiple copies of a list and joins them
+											together<br>
+											&emsp; ∘ The * symbol is a repetition operator when applied to a
+											sequence and an integer<br>
+											&emsp; &emsp; •Sequence is left operand, number is right<br>
+											&emsp; ∘ General format: list * n<br>
+											• You can iterate over a list using a for loop<br>
+											&emsp; ∘ Format: for x in list:<hr>
+
+											<h2>LISTTEST.PY</h2>
+											<center><img src="images/list1.png" width="600" /></center><br>
+											<center><img src="images/ist2.png" width="600" /></center><br><hr>
+
+											<h2>BARISTA_PAY.PY</h2>
+											<center><img src="images/list3.png" width="600" /></center><br>
+											<center><img src="images/list4.png" width="600" /></center><br><hr>
+
+											<h2>LIST METHODS AND USEFUL BUILT-IN FUNCTIONS</h2>
+											• An IndexError exception is raised if an invalid index is used<br>
+											• len function: returns the length of a sequence such as a list<br>
+											&emsp; ∘ Example: size = len(my_list)<br>
+											&emsp; ∘ Returns the number of elements in the list, so the index of last
+											element &emsp; &emsp;is len(list)-1<br>
+											&emsp; ∘ Can be used to prevent an IndexError exception when<br>
+											&emsp;&emsp;iterating over a list with a loop<br><hr>
+
+											<h2>LISTOPERATOR.PY</h2>
+											<center><img src="images/list5.png" width="600" /></center><br>
+											<center><img src="images/list6.png" width="600" /></center><hr>
+
+											<center><h2>LIST METHODS AND USEFUL BUILT-IN FUNCTIONS</h2></center>
+											• You can use the in operator to determine whether an
+											item is contained in a list<br>
+											&emsp; ∘ General format: item in list<br>
+											&emsp; ∘ Returns True if the item is in the list, or False if it is not in the list<br>
+											• Similarly you can use the not in operator to determine
+											whether an item is not in a list<br>
+											• append(item): used to add items to a list - item is
+											appended to the end of the existing list<br>
+											• index(item): used to determine where an item is
+											located in a list<br>
+											&emsp; ∘ Returns the index of the first element in the list containing
+											item<br>
+											&emsp; ∘ Raises ValueError exception if item not in the list<br>
+											• insert(index,item): used to insert item at position index in
+											the list<br>
+											• sort(): used to sort the elements of the list in ascending
+											order<br>
+											• remove(item): removes the first occurrence of item in the list<br>
+											• reverse(): reverses the order of the elements in the list<br>
+											• del statement: removes an element from a specific index
+											in a list<br>
+											&emsp; ∘ General format: del list[i]<br>
+											• min and max functions: built-in functions that returns the item
+											that has the lowest or highest value in a sequence<br>
+											&emsp; ∘ The sequence is passed as an argument<hr>
+
+											<h2>LIST METHODS AND USEFUL BUILT-IN FUNCTIONS</h2>
+											<center><img src="images/list7.png" width="600" /></center><br><br><hr>
+
+											<h2>LISTMETHODS.PY</h2>
+											<center><img src="images/list8.png"  width="600"/></center><br>
+											<center><img src="images/list9.png"  width="600"/></center><hr>
+
+											<h2>WRITE CODE HEROES.PY</h2>
+											1. Display Heroes<br>
+											2. Add Heroes<br>
+											3. Insert Heroes<br>
+											4. Remove Heroes<br>
+											5. Display Sorted Heroes (Ascending / Descending)<br>
+											** Write in functional way<br><hr>
+
+											<center><h2>LISTS</h2></center>
+											<center><img src="images/python.png"  width="300"/></center><br><br>
+											<center><h3>Two-Dimensional ListsS</h3></center><br><hr>
+
+											<h2>TWO-DIMENSIONAL LISTS</h2>
+											• Two-dimensional list: a list that contains other lists as its elements<br>
+											&emsp; ∘ Also known as nested list<br>
+											&emsp; ∘ Common to think of two-dimensional lists as having rows and
+											columns<br>
+											&emsp; ∘ Useful for working with multiple sets of data<br>
+											• To process data in a two-dimensional list need to use two
+											indexes<br>
+											• Typically use nested loops to process<br><hr>
+
+											<h2>TWO-DIMENSIONAL LISTS</h2>
+											<center><img src="images/two.png" width="600"  /><br></center>
+											<center><h4>students = [['Joe','Kim'],['Sam','Sue'],['Kelly', 'Chris']]</h4></center><br><br><hr>
+
+											<h2>TWO-DIMENSIONAL LISTS</h2>
+											<center><img src="images/row1.png" width="600" /></center><br><br>
+											<center><img src="images/row2.png" width="600" /></center><br><br><hr>
+
+											<h2>TWO-DIMENSIONAL LISTS</h2>
+											<center><img src="images/list10.png"width="600"  /></center><hr>
+
+											<center><h2>TUPLES</h2></center>
+											<center><img src="images/python.png"width="300"  /></center><br><br>
+											<center><h3>Introduction</h3></center><hr>
+
+											<h2>TUPLES</h2>
+											• Tuple: an immutable sequence<br>
+											&emsp; ∘ Very similar to a list<br>
+											&emsp; ∘ Once it is created it cannot be changed<br>
+											&emsp; ∘ Format: tuple_name = (item1, item2)<br>
+											&emsp; ∘ Tuples support operations as lists<br>
+											&emsp;&emsp; • Subscript indexing for retrieving elements<br>
+											&emsp;&emsp; • Methods such as index<br>
+											&emsp;&emsp; • Built in functions such as len, min, max<br>
+											&emsp;&emsp; • Slicing expressions<br>
+											&emsp;&emsp; • The in, +, and * operators<br><hr>
+
+											<h2>TUPLES</h2>
+											• Tuples do not support the methods:<br>
+											&emsp; ∘ append<br>
+											&emsp; ∘ remove<br>
+											&emsp; ∘ insert<br>
+											&emsp; ∘ reverse<br>
+											&emsp; ∘ sort<hr>
+
+											<h2>TUPLES</h2>
+											• Advantages for using tuples over lists:<br>
+											&emsp; ∘ Processing tuples is faster than processing lists<br>
+											&emsp; ∘ Tuples are safe<br>
+											&emsp; ∘ Some operations in Python require use of tuples<br>
+											• list() function: converts tuple to list<br>
+											• tuple() function: converts list to tuple<hr>
+
+											<h2>TUPLES</h2>
+											<center><img src="images/note.png" width="600" /></center><hr>
+
+											<center><h2>LISTS TO FILE</h2></center>
+											<center><img src="images/python.png" width="300" /></center><br><br>
+											<center><h3>Write Lists and Read Lists from File</h3></center><hr>
+
+											<h2>WRITELINES.PY</h2>
+											<center><img src="images/list11.png" width="600" /></center>
+											<center><img src="images/list13.png" width="600" /></center><hr>
+
+											<h2>READLINES.PY</h2>
+											<center><img src="images/readlist.png" width="600" /></center>
+											<center><img src="images/readlist1.png" width="600" /></center><hr>
+
+											<center><h2>MATHPLOT</h2></center>
+											<center><img src="images/python.png" width="300"  /></center>
+											<center><h3>Introduction</h3></center><hr>
+
+											<h2>MATHPLOT</h2>
+											• The matplotlib package is a library for creating two-
+											dimensional charts and graphs.<br>
+											• It is not part of the standard Python library, so you will have to
+											install it separately, after you have installed Python on your
+											systemThe matplotlib package is a library for creating two-
+											dimensional charts and graphs.
+											<center><img src="images/pip.png" width="600" /></center><hr>
+
+											<h2>LINE_GRAPH1.PY</h2>
+											<center><img src="images/grafe1.png" width="600" /></center>
+											<center><img src="images/grafe.png" width="600" /></center><hr>
+
+											<h2>LINE_CHART2.PY</h2>
+											<center><img src="images/grafe4.png" width="600" /></center>
+											<center><img src="images/grafe2.png" width="600" /></center><hr>
+
+											<h2>BAR_CHART1.PY</h2>
+											<center><img src="images/bar1.png" width="600" /></center>
+											<center><img src="images/bar.png" width="600" /></center><hr>
+
+											<h2>PLOT BAR CHART</h2>
+											<center><img src="images/bar3.png" width="600" /></center>
+											<center><img src="images/bar2.png" width="600" /></center><hr>
+
+											<h2>BAR_CHART1.PY</h2>
+											• The bar function has a color parameter that you
+											can use to change the colors of the bars.<br>
+											• The argument that you pass into this parameter is a
+											tuple containing a series of color codes.<br>
+											<center><img src="images/barclo.png" width="600" /></center><hr>
+
+											<h2>BAR_CHART2.PY</h2>
+											<center><img src="images/bar5.png" width="600" /></center>
+											<center><img src="images/bar4.png" width="600" /></center><hr>
+
+											<h2>PIE_CHART1.PY</h2>
+											<center><img src="images/pie1.png" width="600" /></center>
+											<center><img src="images/pie.png" width="600" /></center><hr>
+
+											<h2>SUMMARY</h2>
+											Lists, including:<br>
+											&emsp; • Repetition and concatenation operators<br>
+											&emsp; • Indexing<br>
+											&emsp; • Techniques for processing lists<br>
+											&emsp; • Slicing and copying lists<br>
+											&emsp; • List methods and built-in functions for lists<br>
+											&emsp; • Two-dimensional lists<br>
+											Tuples, including:<br>
+											&emsp; • Immutability<br>
+											&emsp; • Difference from and advantages over lists<br>
+											&emsp; • Plotting charts and graphs with the matplotlib Packageould s<br>
+
+
+
+
+
+
+
+
+
                                         </p>
-                                        <p><a href="Lecture6.html" class=button>กลับ</a>
-                                        <a href="Lecture8.html" class=button>บทถัดไป</a></p>
+										<center> <p><a href="Lecture6.html" class=button>กลับ</a>
+                                        <a href="Lecture8.html" class=button>บทถัดไป</a></p></center>
 									</div>
-									<span class="image"><img src="images/python.png" alt="" /></span>
 								</div>
 							</section>
 					</div>

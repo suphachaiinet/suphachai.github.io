@@ -13,7 +13,7 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
-
+		<font face = "Comic Sans MS" >
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -45,12 +45,251 @@
 											<h2>Lecture6</h2>
 										</header>
 										<p>
-                                            เรื่อง....
-                                        </p>
-                                        <p><a href="Lecture5.html" class=button>กลับ</a>
-                                        <a href="Lecture7.html" class=button>บทถัดไป</a></p>
+											<center><h2>FILES</h2></center>
+											<center><img src="images/python.png" width="300"/></center>
+											<center><h3> Introduction </h3></center><hr>
+
+											<h2>FILES</h2>
+											• For program to retain data between the times it is run, you must save
+											the data<br>
+											&emsp; • Data is saved to a file, typically on computer disk<br>
+											&emsp; • Saved data can be retrieved and used at a later time<br>
+											• "Writing data to" : saving data on a file<br>
+											• Output file: a file that data is written to<br>
+											• "Reading data from" : process of retrieving data from a file<br>
+											• Input file: a file from which data is read<br> 
+											<h2>WRITE DATA TO FILE</h2>
+											<center><img src="images/write.png" width="600"/></center><hr>
+
+											<h2>READ DATA FROM FILE</h2>
+											<center><img src="images/read.png" width="600"/></center><hr>
+
+											<h2>TYPE OF FILES</h2>
+											• In general, two types of files<br>
+											&emsp; 1. Text file: contains data that has been encoded as text<br>
+											&emsp;2. Binary file: contains data that has not been converted to text<br>
+											Two ways to access data stored in file<br>
+											&emsp;1. Sequential access: file read sequentially from beginning to end, can't skip ahead<br>
+											&emsp;2. Direct access: can jump directly to any piece of data in the file<br><hr>
+                                        
+											<h2>FILE</h2>
+											There are always three steps that must be taken when a file is used by a program.<br>
+											• Open the file - Opening a file creates a connection between the file and the program. Opening an output file usually creates the file on the disk and allows the program to
+											write data to it. Opening an input file allows the program to read data from the file.<br>
+											• Process the file - In this step data is either written to the file (if it is an output file) or read
+											from the file (if it is an input file).<br>
+											• Close the file - When the program is finished using the file, the file must be closed.
+											Closing a file disconnects the file from the program.<br><hr>
+										
+											<Center><h2>FILE</h2></Center>
+											<center><img src="images/python.png" width="300" /></center>
+											<center><h3>Input / Output</h3></center><hr>
+
+											<Center><h2>FILE MODE</h2></Center>
+											<center><img src="images/file.png" width="600" /></center><hr>
+
+											<Center><h2>FILEWRITE.PY</h2></Center>
+											<center><img src="images/write1.png" width="600" /></center>
+											<center><img src="images/file1.png" width="600" /></center><hr>
+
+											<Center><h2>FILEREAD.PY</h2></Center>
+											<center><img src="images/read1.png" width="600" /></center>
+											<center><img src="images/read2.png" width="600" /></center><hr>
+
+											<Center><h2>READLINE.PY</h2></Center>
+											<center><img src="images/read3.png" width="600" /></Center>
+											<center><img src="images/read4.png" width="600" /></Center><hr>
+											
+											<Center><h2>STRIP_NEWLINE.PY</h2></Center>
+											<center><img src="images/stripline.png"  width="600"/></center>
+											<center><img src="images/stripline1.png"  width="600"/></center><hr>
+
+											<Center><h2>WRITE_NAME.PY</h2></Center>
+											<center><img src="images/name.png"  width="600"/></center>
+											<center><img src="images/name1.png"  width="600"/></center><hr>
+
+											<center><h2>WRITE_NUMBERS.PY</h2></center>
+											<center><img src="images/write2.png"  width="600"/></center>
+											<center><img src="images/write4.png"  width="600"/></center><hr>
+
+											<center><h2>WRITE_NUMBERS.PY</h2></center>
+											<center><img src="images/readnum.png" width="600"/></Center>
+											<center><img src="images/readnum1.png" width="600"/></Center><hr>
+											
+											<center><h2>WRITE_NUMBERS.PY</h2></center>
+											<center><img src="images/python.png" width="300"  /></Center>
+											<center><h3>Using Loop to Process File</h3></center><hr>
+
+											<center><h2>DETECTING END OF FILE</h2></center>
+											<center><img src="images/file2.png" width="600" /></center><br><hr>
+
+											<center><h2>DETECTING END OF FILE</h2></center>
+											<center><img src="images/file3.png"width="600"  /></center><hr>
+
+											<center><h2>WRITE_SALES.PY</h2></center>
+											<center><img src="images/sale.png"width="600"  /></center><hr>
+
+											<center><h2>READ_SALES.PY (WHILE LOOP)</h2></center>
+											<center><img src="images/read1.png" width="600" /></center><br>
+											<center><img src="images/readsale.png" width="600" /></center><br><hr>
+
+											<center><h2>READ_SALES2.PY(FOR LOOP)</h2></center>
+											<center><img src="images/read5.png" width="600" /></center><br>
+											<center><img src="images/read6.png" width="600" /></center><hr>
+
+											<center><h2>FILES </h2></center>
+											<center><img src="images/python.png"  width="300"/></center><br>
+											<center><h3>Processing Record</h3></center><br><hr>
+
+											<h2>PROCESSING RECORDS</h2>
+											• Record: set of data that describes one item<br>
+											• Field: single piece of data within a record<br>
+											• Write record to sequential access file by writing the fields one
+											after the other<br>
+											• Read record from sequential access file by reading each field
+											until record complete<br>
+											When working with records, it is also important to be able to:<br>
+											• Add records<br>
+											• Display records<br>
+											• Search for a specific record<br>
+											• Modify records<br>
+											• Delete records<hr>
+											
+											<center><h2>SAVE_EMP_RECORDS.PY (WHILE LOOP)</h2></center>
+											<center><img src="images/emp.png" width="600" /></center>
+											<center><img src="images/emp1.png" width="600" /></center><hr>
+
+											<center><h2>NOW! WRITE PROGRAM TO SHOW THIS</h2></center><br><br>
+											<center><img src="images/read7.png"width="600"  /></center><hr>
+
+											<center><h2>IMPORT OS</h2></center>
+											<center><img src="images/import.png" width="600"  /></center><hr>
+
+											<center><h2>FILES</h2></center><br><br>
+											<center><img src="images/python.png" width="300" /></center><br><br>
+											<center><h3>Exceptions</h3></center><hr>
+
+											<center><h2>GROSS_PAY1.PY</h2></center>
+											<center><img src="images/gross.png" width="600" /></center><br><br>
+											<center><img src="images/gross1.png" width="600" /></Center><hr>
+
+											<center><h2>EXCEPTION</h2></center>
+											• Exception: error that occurs while a program is running<br>
+											&emsp; • Usually causes program to abruptly halt<br>
+											• Traceback: error message that gives information regarding
+											line numbers &emsp;&emsp;that caused the exception<br>
+											&emsp; • Indicates the type of exception and brief description of the
+											error that  &emsp;&emsp;caused exception to be raised<br><hr>
+
+											<center><h2>EXCEPTION</h2></center>
+											• Exception handler: code that responds when exceptions are raised and prevents
+											program from crashing
+											• In Python, written as try/except statement<br>
+											&emsp;General format:<br>
+											&emsp;&emsp;try:<br>
+											&emsp;&emsp;&emsp;&emsp;statements<br>
+											&emsp;&emsp;except exceptionName:<br>
+											&emsp;&emsp;&emsp;&emsp;statements<br>
+											• Try suite: statements that can potentially raise an exception<br>
+											• Handler: statements contained in except block<br><hr>
+
+											<center><h2>GROSS_PAY2.PY</h2></center>
+											<center><img src="images/gross2.png" width="600" /></center>
+											<center><img src="images/gross3.png" width="600" /></center><hr>
+
+											<center><h2>EXCEPTION</h2></center>
+											• Many exceptions can be prevented by careful coding<br>
+											&emsp; • Example: input validation<br>
+											&emsp; • Usually involve a simple decision construct<br>
+											• Some exceptions cannot be avoided by careful coding<br>
+											&emsp; • Examples<br>
+											&emsp;&emsp; • Trying to convert non-numeric string to an integer<br>
+											&emsp;&emsp; • Trying to open for reading a file that doesn't exist<br><hr>
+
+											<center><h2>GROSS_PAY2.PY</h2></center>
+											<center><img src="images/gross4.png" width="600" /></center><hr>
+
+											<center><h2>EXCEPTION</h2></center>
+											• If statement in try suite raises exception:<br>
+											&emsp; • Exception specified in except clause:<br>
+											&emsp;&emsp; • Handler immediately following except clause executes<br>
+											&emsp;&emsp; • Continue program after try/except statement<br>
+											&emsp; • Other exceptions:<br>
+											&emsp;&emsp; • Program halts with traceback error message<br>
+											• If no exception is raised, handlers are skipped<br><hr>
+
+											<center><h2>DISPLAY_FILE.PY</h2></center>
+											<center><img src="images/gross5.png" width="600" /></center>
+
+											<center><h2>HANDLING MULTIPLE EXCEPTIONS</h2></center>
+											• Often code in try suite can throw more than one type of
+											exception<br>
+											&emsp; • Need to write except clause for each type of exception that
+											needs to be handled<br>
+											• An except clause that does not list a specific exception will
+											handle any &emsp;exception that is raised in the try suite<br>
+											&emsp; • Should always be last in a series of except clauses<hr>
+											
+											<center><h2>SALE_REPORT.PY</h2></center>
+											<center><img src="images/except.png" width="600" /></center><hr>
+
+											<center><h2>DISPLAYING AN EXCEPTION'S DEFAULT ERROR MESSAGE</h2></center>
+											• Exception object: object created in memory when an exception is
+											thrown<br>
+											&emsp; • Usually contains default error message pertaining to the exception<br>
+											&emsp; • Can assign the exception object to a variable in an except clause<br>
+											&emsp;&emsp;•Example: except ValueError as err:<br>
+											&emsp; • Can pass exception object variable to print function to display
+											the &emsp;&emsp;default error message<hr>
+
+											<center><h2>GROSS_PAY3.PY(DISPLAY DEFAULT ERROR MSG.)</h2></center>
+											<center><img src="images/except1.png" width="600" /></center><hr>
+
+											<center><h2>THE ELSE CLAUSE</h2></center>
+											• try/except statement may include an optional else clause, which
+											appears after all the except clauses<br>
+											&emsp; • Aligned with try and except clauses<br>
+											&emsp; • Syntax similar to else clause in decision structure<br>
+											&emsp; • Else suite: block of statements executed after statements in try
+											suite, only if no exceptions were raised<br>
+											&emsp;&emsp; • If exception was raised, the else suite is skipped<hr>
+
+											<center><h2>SALE_REPORT4.PY(TRY-EXCEPT-ELSE)</h2></center>
+											<center><img src="images/sale4.png" width="600" /></center><hr>
+
+											<center><h2>THE FINALLY CLAUSE</h2></center>
+											• try/except statement may include an optional finally clause, which appears after all
+											the except clauses<br>
+											&emsp; • Aligned with try and except clauses<br>
+											&emsp; • General format:<br>
+											&emsp;&emsp;&emsp;finally:<br>
+											&emsp;&emsp;&emsp;&emsp;statements<br>
+											•Finally suite: block of statements after the finally clause<br>
+											&emsp; • Execute whether an exception occurs or not<br>
+											&emsp; • Purpose is to perform cleanup before exiting<br><hr>
+
+											<center><h2>TRY-EXCEPT-FINALLY</h2></center>
+											<center><img src="images/final.png" width="600" /></center><hr>
+
+											<center><h2>TRY-EXCEPT-FINALLY</h2></center>
+											<center><img src="images/final1.png" width="600" /></center><hr>
+
+											<h2>WHAT IF AN EXCEPTION IS NOT HANDLED?</h2>
+											• Two ways for exception to go unhandled:<br>
+											&emsp; • No except clause specifying exception of the right type<br>
+											&emsp; • Exception raised outside a try suite<br>
+											• In both cases, exception will cause the program to halt<br>
+											&emsp; • Python documentation provides information about<br>
+											&emsp; • exceptions that can be raised by different functions<br>
+
+
+
+
+
+											</p>
+											<center> <p><a href="Lecture5.html" class=button>กลับ</a>
+                                        <a href="Lecture7.html" class=button>บทถัดไป</a></p></center>
 									</div>
-									<span class="image"><img src="images/python.png" alt="" /></span>
 								</div>
 							</section>
 					</div>

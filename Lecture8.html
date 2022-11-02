@@ -13,7 +13,7 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
-
+		<font face = "Comic Sans MS" >
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -45,11 +45,205 @@
 											<h2>Lecture8</h2>
 										</header>
 										<p>
-                                            เรื่อง....
-                                        </p>
-                                        <p><a href="Lecture.html" class=button>กลับ</a>
+											<center><h2>DICTIONARIES</h2></center>
+											<center><img src="images/python.png" width="300"/></center>
+											<center><h3> Introduction </h3></center><hr>
+
+
+											<h2>DICTIONARIES</h2>
+											• Dictionary: object that stores a collection of data<br>
+											&emsp; ∘ Each element consists of a key and a value<br>
+											&emsp;&emsp; • Often referred to as mapping of key to value<br>
+											&emsp;&emsp; • Key must be an immutable object<br>
+											&emsp; ∘ To retrieve a specific value, use the key associated with it<br>
+											&emsp; ∘ Format for creating a dictionary<br>
+											dictionary = {key1:val1, key2:val2}<br> <hr>
+
+
+											<h2>ADD AND DELETE DICTIONARY</h2>
+											• Dictionaries are mutable objects<br>
+											• To add a new key-value pair: dictionary[key] = value<br>
+											&emsp; ∘ If key exists in the dictionary, the value associated<br>
+											&emsp; ∘ with it will be changed<br>
+											• To delete a key-value pair: del dictionary[key]<br>
+											&emsp; ∘ If key is not in the dictionary, KeyError exception is
+											raised<br><hr>
+
+											
+											<h2>INTRODICT.PY</h2>
+											<center><img src="images/dict.png" width="600"/></center><br>
+											<center><img src="images/dict1.png" width="600"/></center><hr>
+
+
+											<h2>DICTIONARY NUMBER OF ELEMENTS AND MIXING DATA TYPES</h2>
+											• len function: used to obtain number of elements in a
+											dictionary<br>
+											• Keys must be immutable objects, but associated
+											values can be any type of &emsp; object<br>
+											&emsp; ∘ One dictionary can include keys of several different
+											immutable types<br>
+											• Values stored in a single dictionary can be of different
+											types<hr>
+
+
+											<h2>CREATING AN EMPTY DICTIONARY AND USING FOR LOOP</h2>
+											• To create an empty dictionary:<br>
+											&emsp; ∘ Use {}<br>
+											&emsp; ∘ Use built-in function dict()<br>
+											&emsp; ∘ Elements can be added to the dictionary as program
+											executes<br>
+											• Use a for loop to iterate over a dictionary<br>
+											&emsp; ∘ General format: for key in dictionary:<br>
+											for key in dictionary:<hr>
+
+
+											<h2>FORDICT.PY</h2>
+											<center><img src="images/dict2.png" width="600" /></center><br>
+											<center><img src="images/dict3.png" width="600" /></center><br><hr>
+
+
+											<h2>SOME DICTIONARY METHODS</h2>
+											<center><img src="images/met.png" width="600" /></center><br><hr>
+
+
+											<center><h2>SET</h2></center>
+											<center><img src="images/python.png" width="300" /></center><br><br>
+											<center><h3>Set Methods and Useful Built-in Functions</h3></center><hr>
+
+
+											<h2>SET</h2>
+											• Set: object that stores a collection of data in same
+											way as mathematical set<br>
+											&emsp; ∘ All items must be unique<br>
+											&emsp; ∘ Set is unordered<br>
+											&emsp; ∘ Elements can be of different data types
+											• len function: returns the number of elements in the set<br>
+											• Sets are mutable objects<br>
+											• add method: adds an element to a set<br>
+											• update method: adds a group of elements to a set<br>
+											&emsp; ∘ Argument must be a sequence containing iterable
+											elements, and each of the elements is added to the set<br>
+											• remove and discard methods: remove the specified
+											item from the set<br>
+											&emsp; ∘ The item that should be removed is passed to both methods as
+											an argument
+											<br>
+											&emsp; ∘ Behave differently when the specified item is not found in the set<br>
+											&emsp; ∘ remove method raises a KeyError exception<br>
+											&emsp; ∘ discard method does not raise an exception<br>
+											• clear method: clears all the elements of the set<br><hr>
+
+
+											<h2>FINDING THE UNION OF SETS</h2>
+											• Union of two sets: a set that contains all the elements of both
+											sets<br>
+											• To find the union of two sets:<br>
+											&emsp; ∘ Use the union method<br>
+											&emsp; ∘ Format: set1.union(set2)<br>
+											&emsp; ∘ Use the | operator<br>
+											&emsp; ∘ Format: set1 | set2<br>
+											&emsp; ∘ Both techniques return a new set which contains the union of both
+											sets<br><hr>
+
+
+											<h2>FINDING THE UNION OF SETS</h2>
+											• Intersection of two sets: a set that contains only the elements
+											found in both sets<br>
+											• To find the intersection of two sets:<br>
+											&emsp; ∘ Use the intersection method<br>
+											&emsp; ∘ Format: set1.intersection(set2)<br>
+											&emsp; ∘ Use the & operator<br>
+											&emsp; ∘ Format: set1 & set2<br>
+											&emsp; ∘ Both techniques return a new set which contains the intersection of<br>
+											both sets<br><hr>
+
+
+											<h2>FINDING THE SYMMETRIC DIFFERENCE OF SETS</h2>
+											• Symmetric difference of two sets: a set that contains
+											the elements that are not shared by the two sets<br>
+											• To find the symmetric difference of two sets:<br>
+											&emsp; ∘ Use the symmetric_difference method<br>
+											&emsp; ∘ Format: set1.symmetric_difference(set2)<br>
+											&emsp; ∘ Use the ^ operator<br>
+											&emsp; ∘ Format: set1 ^ set2<br><hr>
+
+
+											<h2>FINDING SUBSETS AND SUPERSETS</h2>
+											• Set A is subset of set B if all the elements in set A are
+											included in set B<br>
+											• To determine whether set A is subset of set B<br>
+											&emsp; ∘ Use the issubset method<br>
+											&emsp; ∘ Format: setA.issubset(setB)<br>
+											&emsp; ∘ Use the <= operator<br>
+											&emsp; ∘ Format: setA <= setB<br><hr>
+
+
+											<h2>FINDING SUBSETS AND SUPERSETS</h2>
+											• Set A is superset of set B if it contains all the elements of
+											set B<br>
+											• To determine whether set A is superset of set B<br>
+											&emsp; ∘ Use the issuperset method<br>
+											&emsp; ∘ Format: setA.issuperset(setB)<br>
+											&emsp; ∘ Use the >= operator<br>
+											&emsp; ∘ Format: setA >= setB<br><hr>
+
+
+											<h2>SETINTRO.PY</h2>
+											<center><img src="images/set.png"width="600"  /></center>
+											<center><img src="images/set1.png"width="600"  /></center><hr>
+
+
+											<h2>SET OPERATION</h2>
+											<center><img src="images/set2.png"width="600"  /></center><hr>
+
+
+											<h2>SERIALIZING OBJECTS</h2>
+											<center><img src="images/python.png"width="300"  /></center>
+											<center><h3>Serializing Objects</h3></center><hr>
+
+
+											<h2>SERIALISING OBJECTS</h2>
+											• Serialize an object: convert the object to a stream of
+											bytes that can easily be stored in a file<br>
+											• Pickling: serializing an object<hr>
+
+
+											<h2>SERIALISING OBJECTS</h2>
+											• To pickle an object:<br>
+											&emsp; ∘ Import the pickle module<br>
+											&emsp; ∘ Open a file for binary writing<br>
+											&emsp; ∘ Call the pickle.dump function<br>
+											&emsp; ∘ Format: pickle.dump(object, file)<br>
+											&emsp; ∘ Close the file<br>
+											• You can pickle multiple objects to one file prior to
+											closing the file<br><hr>
+
+
+											<h2>SERIALISING OBJECTS</h2>
+											• Unpickling: retrieving pickled object<br>
+											• To unpickle an object:<br>
+											&emsp; ∘ Import the pickle module<br>
+											&emsp; ∘ Open a file for binary writing<br>
+											&emsp; ∘ Call the pickle.load function<br>
+											&emsp; ∘ Format: pickle.load(file)<br>
+											&emsp; ∘ Close the file<br>
+											• You can unpickle multiple objects from the file<hr>
+
+
+											<h2>PICKLE_OBJECTS.PY</h2>
+											<center><img src="images/pick.png" width="600" /></center>
+											<center><img src="images/pick1.png" width="600" /></center><hr>
+
+											<h2>UNPICKLE_OBJECTS.PY</h2>
+											<center><img src="images/un1.png" width="600" /></center>
+											<center><img src="images/un.png" width="600" /></center>
+
+
+
+                                        </p><center>
+                                        <p><a href="Lecture7.html" class=button>กลับ</a>
+											<a href="Lecture.html" class=button>หน้าบทเรียน</a></p></center>
 									</div>
-									<span class="image"><img src="images/python.png" alt="" /></span>
 								</div>
 							</section>
 					</div>
